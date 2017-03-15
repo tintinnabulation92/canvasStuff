@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvas tutorial</title>
+	<script type="text/javascript">
+		function draw() {
+			var canvas = document.getElementById('tutorial');
+			if(canvas.getContext){
+				var ctx = canvas.getContext('2d');
+				ctx.fillStyle = 'green';
+				ctx.fillRect(60,60,300,300);
+
+				ctx.fillStyle = 'orange';
+				ctx.fillRect(0,0,200,200);
+			}
+		}
+
+	</script>
+</head>
+	<body>
+		<!-- body codes goes here-->
+		<canvas id="tutorial" width="800" height="600">
+		<body onload="draw();">
+		</canvas>
+		
+	</body>
+</html>
